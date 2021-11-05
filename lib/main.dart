@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import './screens/tabs_screen.dart';
 import 'package:flutter/material.dart';
 
 import './screens/categories_screen.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: CategoriesScreen(),
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
